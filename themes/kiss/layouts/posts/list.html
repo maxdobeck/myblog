@@ -1,0 +1,13 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<section class="section">
+  <div class="container">
+    {{ range sort .Paginator.Pages }}
+    <ul>
+      <h2 class="subtitle is-6">{{ .Date.Format "January 2, 2006" }}</h2>
+      <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
+    </ul>
+    {{ end }}
+  </div>
+</section>
+{{ partial "footer" . }}
