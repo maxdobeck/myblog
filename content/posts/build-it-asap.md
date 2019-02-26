@@ -8,7 +8,7 @@ When I program in my spare time I often listen to music.  Much of the music is s
 
 To centralize my listening experience I used Electron to build a giant queue that simply plays every song in the list.  I threw in a search bar and some controls and voila I can get to any spot in the list quickly!  The below image is the app running in the background.
 
-![local-music-player]("/images/local-music-player-working.png")
+![local-music-player](/images/local-music-player-working.png)
 
 I worked on this for only a couple weeks during my spare time but each time I discovered something new or added a new feature.  It was fun, I would research on how to add the feature I wanted, look at docs, build it then test it in the development version.  Each time I was pleased that the feature worked and moved on to the next feature.
 
@@ -20,7 +20,7 @@ The time had come to...
 
 The app built fine, I fired it up, and then nothing!
 
-![youtube-block]({{ "/assets/embeded-youtube-blocked.png" }})
+![youtube-block](/images/embeded-youtube-blocked.png)
 
 # Why?
 

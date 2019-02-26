@@ -8,7 +8,7 @@ This is a discussion of a trendy way to build web apps using two componets: an a
 
 Lets put this to the test by trying to build a simple React app that sends requests to a Rails API only server.  The end result should be pretty simple, you visit the server hosting your React app and get a message from the Rails server. Something like below:
 
-![A greetings from the Rails API server!]({{ "/assets/Screenshot from 2017-10-28 16-02-36.png" | absolute_url }})
+![A greetings from the Rails API server!](/images/Screenshot from 2017-10-28 16-02-36.png)
 
 ## Why Rails? ##
 [The official Rails doc says it best](http://edgeguides.rubyonrails.org/api_app.html).
@@ -101,11 +101,11 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 For our first API resource we'll build `/ping`.  The React server will "ping" the Rails server with a request for the Ping resource.  The Rails server should return a JSON message like, "Pong" or "Hello from the Rails server".  In practice this won't be useful but this request for a resource followed by a JSON response is going to be the typical flow of all requests.  Once we have the JSON object we can manipulate the data however we want with React.  We can test this easily at the command line with [curl](https://curl.haxx.se/) and once we like the response we'll just make an AJAX or Fetch request from React.
 
 Here's an example of curl command line output when we make a request to the locally running API server:
-![Ping-API-Example]({{ "/assets/ping failure and success example.png" | absolute_url }})
+![Ping-API-Example](/images/ping failure and success example.png)
 You can see the first test passed and returned a HTTP 200 response.  The second test was made after the server was shutdown so we didn't get a response to our /ping request.
 
 Later when we add a custom JSON message we should be able to visit the URL in a browser and see an actul text response, not just an HTTP response:
-![Ping-API-Message-Example]({{ "/assets/heroku rails sever working.png" | absolute_url }})
+![Ping-API-Message-Example](/images/heroku rails sever working.png)
 
 
 

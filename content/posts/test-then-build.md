@@ -16,13 +16,13 @@ The point is: *prove it works*.
 ## Check for the shape you want, not the right shape
 In this little picture below we've got our magic function that outputs tetris style shapes.  In this magical land we want the function to output a block of two widths.  This is our _design_ stage, we have talked about what we want and written it down somewhere.
 
-![Magic Shape Function]({{ "/assets/magic-shape-func.jpg"|absolute_url}})
+![Magic Shape Function](/images/magic-shape-func.jpg)
 
 
 So we go ahead an make the function righ?  Eeasy enough, stick a couple blocks together and write a test checking that we've got our 2 blocks.  Wrong!  This is the danger of writing your function, then testing based on what you _think_ should happen.  If we're only checking that we've got two blocks together in a horizontal fashion we'll potentially let shapes like below through.
 
 
-![Magic Shape Test Func - False Positive]({{ "/assets/magic-shape-false-positive-test.jpg"|absolute_url}})
+![Magic Shape Test Func - False Positive](/images/magic-shape-false-positive-test.jpg)
 
 Technically this satisfies our test and it would get greenlighted.  To avoid any false positives like this one we could have written the test first and explicitly described the output we wanted.  This pattern of describing what you want then satisfying those requirments means you build within a box you've defined.  There will be fewer suprsises if you create limits as you are setting out to make all those tests go from red to green.
 
