@@ -1,4 +1,4 @@
-baseurl = "https://pensive-kalam-5e21c3.netlify.com"
+baseurl = "https://pensive-kalam-5e21c3.netlify.com/"
 languageCode = "en"
 title = "mdobeck.com"
 theme = "kiss"
@@ -11,8 +11,7 @@ enableRobotsTXT = true
 customCSS = ["css/custom.css"]
 
 [params.rss]
-
-includeContent = true # Includes whole content in rss
+includeContent = false # Includes whole content in rss
 authorName = "Max Dobeck" # Site author's full name
 authorEmail = "max.dobeck@protonmail.com"
 
