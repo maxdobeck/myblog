@@ -5,7 +5,7 @@ date: 2018-08-05
 ---
 
 ## How do you know something works?
-If a tree falls in the forest does anyone hear it?  Likewise if you create a function do you know it works?  I'm not even talking about edge/corner cases in this hypothetical instance.  I'm talking about plain, vanilla instance where the data you're taking in is pristine.  No weird characters, no bad data, evertyhing goes as expected.
+If you create a function do you know it works?  I'm not talking about edge/corner cases in this hypothetical instance.  I'm talking about plain, vanilla instance where the data you're taking in is pristine.  No weird characters, no bad data, evertyhing goes as expected.
 
 To know that everything works as intended you have to test it.  You have to walk it through the ring of fire that is an integrations or behavior test.  Unit testing is great for when you're developing but when we're talking about behavior (our function working well with the turbulent world around us) then *all unit tests are lies*.
 
