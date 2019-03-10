@@ -1,0 +1,17 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<section class="section">
+  <div class="container">
+    {{ range sort .Pages }}
+    <ul>
+      <div>
+        {{ if .Params.tags }}
+        {{ partial "tags" .Params.tags }}
+        {{ end }}
+      </div>
+      <h1><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
+    </ul>
+    {{ end }}
+  </div>
+</section>
+{{ partial "footer" . }}
