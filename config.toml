@@ -26,7 +26,7 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 
 [params.social]
 
-twitter = ""
+twitter = "amish_panda"
 github = "maxdobeck"
 email = "max.dobeck@protonmail.com"
 linkedin = "maxdobeck"
