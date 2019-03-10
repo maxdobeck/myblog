@@ -2,6 +2,8 @@
 layout: post
 title: "Test then build or, Setting a goal"
 date: 2018-08-05
+tags:
+  - testing
 ---
 
 ## How do you know something works?

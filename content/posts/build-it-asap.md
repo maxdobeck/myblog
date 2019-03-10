@@ -2,6 +2,9 @@
 layout: post
 title: "Build it ASAP"
 date: 2017-12-29
+tags:
+  - testing
+  - deploy
 ---
 
 When I program in my spare time I often listen to music.  Much of the music is sourced across a variety of hosting platforms and media sharing waterholes so for ease of access I bookmark each song in one central folder.  This has led to a large list of bookmarks spread across platforms like Soundcloud and Youtube.

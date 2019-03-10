@@ -2,6 +2,10 @@
 layout: post
 title: "Maybe I Don't Like Jenkins"
 date: 2018-07-30
+tags:
+  - jenkins
+  - CICD
+  - build
 ---
 
 The below really only applies to [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) practices, which is an effor to make your life easier overall.

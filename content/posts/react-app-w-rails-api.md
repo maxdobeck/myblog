@@ -2,6 +2,11 @@
 layout: post
 title: "Create-react-app w/ rails 5 --api"
 date: 2017-08-11
+tags:
+  - react
+  - ruby
+  - rails
+  - api
 ---
 
 This is a discussion of a trendy way to build web apps using two componets: an agnostic frontend with an API interface to the backend.  Essentially the front end is just an empty shell asking for the data it needs, usually in the form of a JSON object, and the back end responds to user requests.  From the viewpoint of the application there is no state beyond the last HTTP request.  Theoretically this should be a simpler way to build easily distrubtable web applications.

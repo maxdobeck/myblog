@@ -1,6 +1,10 @@
 ---
 title: "Creating this blog with jekyll"
 date: 2017-08-01
+tags:
+  - "static site"
+  - "blog"
+  - "jekyll"
 ---
 
 

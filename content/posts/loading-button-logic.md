@@ -2,6 +2,10 @@
 layout: post
 title: "Loading Button Logic"
 date: 2018-07-07
+tags:
+  - vue
+  - vuetify
+  - frontend
 ---
 
 Here --> in the [Vuetify docs](https://vuetifyjs.com/en/components/buttons#example-loaders) there's a handy prop for turning a button click into a "Loading" animation.  This loading animation can take [many forms](https://vuetifyjs.com/en/components/buttons#example-loaders) but I found that adding a watcher, the loader() function, was a not exactly what I needed in my component.  The function example `loader()` works by setting whatever loader was clicked to the opposite of what it originally was.  Once the 3 second timer expires it'll be set to false.
