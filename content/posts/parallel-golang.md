@@ -308,4 +308,5 @@ We need to redesign how we do this task.  What are our options?
 
 1. Use a `select` statement and call the function once in main: https://tour.golang.org/concurrency/5.  This will reduce the already fairly shitty method of writing out `worker(some-argument)` whenever we need to call a worker.  However it means rewriting worker and how we pass data to it.
 
-2. 
+2. Hardcode how many times we print from channel and shut main process no matter what. https://play.golang.org/p/K2jIC2kX1UD This is awful but hey it works fo an example!
+
