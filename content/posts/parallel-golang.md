@@ -1,6 +1,9 @@
 ---
 title: "Parallel Golang"
 date: 2019-03-09T17:10:54-08:00
+tags: 
+  - golang
+  - concurrency
 draft: true
 ---
 
@@ -132,7 +135,8 @@ So that feels pretty parallel!  But its not exactly "production ready" with the 
 
 Here's some example [Stack Overflow answers](https://stackoverflow.com/questions/18207772/how-to-wait-for-all-goroutines-to-finish-without-using-time-sleep) and some [examples of Goroutines](https://gobyexample.com/goroutines).
 
-1. Wait Groups
+**1) Wait Groups**
+
 This will add the goroutine to a Wait Group and when the goroutine finishes it will report this to the Wait Group and the main process can exit.  Basically a lock or semaphore.  
 
 ```
@@ -197,12 +201,13 @@ This is nice but involves some forethough in your design to accomadate all the c
 
 A more succint example: https://play.golang.org/p/_GaPFAbn4Gp.
 
-2. Channels
+**2) Channels**
+
 A good simple example: https://gobyexample.com/channels.  A [buffered channel example](https://tour.golang.org/concurrency/3), which just blocks a little less but we'll ignore that for now.  
 
 Channels are basically pipes that you shove data into or pull data from.  They have primitive types like String, Int, etc so be careful there.  Overall they're not too tricky but here's a few places you can go wrong.
 
-**Bad output**
+**Bad output with Channels**
 
 https://play.golang.org/p/8c8GAQMkXpU
 ```
@@ -306,7 +311,19 @@ Unfortunately we're not printing everything. There should be 9 line entries afte
 
 We need to redesign how we do this task.  What are our options?
 
-1. Use a `select` statement and call the function once in main: https://tour.golang.org/concurrency/5.  This will reduce the already fairly shitty method of writing out `worker(some-argument)` whenever we need to call a worker.  However it means rewriting worker and how we pass data to it.
+1. Use a `select` statement and call the function once in main: https://tour.golang.org/concurrency/5.  This will reduce the already fairly redundant method of writing out `worker(some-argument)` whenever we need to call a worker.  However it means rewriting worker and how we pass data to it.
 
-2. Hardcode how many times we print from channel and shut main process no matter what. https://play.golang.org/p/K2jIC2kX1UD This is awful but hey it works fo an example!
+2. Hardcode how many times we print from channel. https://play.golang.org/p/K2jIC2kX1UD This is awful but hey it works fo an example!
 
+3. There is no canonical solution so build your own!
+
+4. Use someone elses solution: https://duckduckgo.com/?q=golang+github+worker+pool&t=canonical&atb=v81-5_b&ia=software.  There are plenty of people out here coming up with their own solutions that involve channels, 
+
+
+#### Worker Pool Patter in  Golang
+Basically the worker pool pattern is bad for an example of concurrency in Golang.  Or good depending on your point of view.  There isn't one "canonical" or "golang" way of doing it so everyone has a custom way of implementing the pattern.  Most likely you will have separtae busines needs.  Maybe you need the workers to compute some value and push the result to a different channel where another worker pool will do something.
+
+However there is plenty of overlap.  You'll probaly need channels, you'll probably need the `sync` package, and you'll probably need a reliable way to close the channels.  Unfortunately or Fortunately (again your point of view) this is not some default offered by the Golang team.  I suggest experimenting to see how you feel.
+
+Here's an OK (well not great) example using *just* channels.  No sync or anything:
+https://play.golang.org/p/oRsPe7j83PY
