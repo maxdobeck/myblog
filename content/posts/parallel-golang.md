@@ -4,7 +4,7 @@ date: 2019-03-09T17:10:54-08:00
 tags: 
   - golang
   - concurrency
-draft: true
+draft: false
 ---
 
 # Concurrency and Parallelism in Golang
