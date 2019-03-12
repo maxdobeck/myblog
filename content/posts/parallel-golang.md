@@ -321,9 +321,12 @@ We need to redesign how we do this task.  What are our options?
 
 
 #### Worker Pool Patter in  Golang
-Basically the worker pool pattern is bad for an example of concurrency in Golang.  Or good depending on your point of view.  There isn't one "canonical" or "golang" way of doing it so everyone has a custom way of implementing the pattern.  Most likely you will have separtae busines needs.  Maybe you need the workers to compute some value and push the result to a different channel where another worker pool will do something.
+Basically the worker pool pattern is bad for an example of concurrency in Golang.  Or good depending on your point of view.  There isn't one "canonical" or "Golang" way of doing it so everyone has a custom way of implementing the pattern.  Most likely you will have separate busines needs.  Maybe you need the workers to compute some value and push the result to a different channel where another worker pool will do something.
 
-However there is plenty of overlap.  You'll probaly need channels, you'll probably need the `sync` package, and you'll probably need a reliable way to close the channels.  Unfortunately or Fortunately (again your point of view) this is not some default offered by the Golang team.  I suggest experimenting to see how you feel.
+However there is plenty of overlap.  You'll probaly need channels and the `sync` package.  Unfortunately or fortunately (again your point of view) this is not some default offered by the Golang team.  I suggest experimenting to see how you feel.
 
-Here's an OK (well not great) example using *just* channels.  No sync or anything:
-https://play.golang.org/p/oRsPe7j83PY
+Here are the standard links for when people talk about Golang and concurrency:
+
+* [Concurrency is not parallelism, already linked the youtube video](https://blog.golang.org/concurrency-is-not-parallelism)
+* [Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs)
+* [Advanced Go Concurrency Patterns](https://www.youtube.com/watch?v=QDDwwePbDtw)
