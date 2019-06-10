@@ -150,6 +150,7 @@ video {
   font-weight: 400;
   vertical-align: baseline;
   background: 0 0;
+  background-color: #141617;
 }
 td,
 td img {
@@ -5531,7 +5532,7 @@ a.panel-block:hover {
   flex-grow: 1;
 }
 .section {
-  background-color: #fff;
+  background-color: #141617;
   padding: 40px 20px;
 }
 @media screen and (min-width: 980px) {
