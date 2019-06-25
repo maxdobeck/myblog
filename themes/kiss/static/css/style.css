@@ -34,7 +34,7 @@ input[type="radio"] {
 a:hover,
 strong,
 table th {
-  color: #222324;
+  color: #63b0fd;
 }
 .container,
 sub,
@@ -56,6 +56,9 @@ section,
 summary {
   display: block;
 }
+section.footer-bottom {
+  padding-bottom: 40%;
+}
 .button,
 .delete,
 .input,
@@ -69,7 +72,7 @@ summary {
 .heading,
 .menu-label {
   letter-spacing: 1px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 .hero,
 .modal-card,
@@ -151,6 +154,7 @@ video {
   vertical-align: baseline;
   background: 0 0;
   background-color: #141617;
+  color: #69707a;
 }
 td,
 td img {
@@ -192,6 +196,7 @@ a {
   text-decoration: none;
   -webkit-transition: none 86ms ease-out;
   transition: none 86ms ease-out;
+  text-transform: lowercase;
 }
 del {
   text-decoration: line-through;
@@ -343,7 +348,7 @@ pre code {
 }
 .box,
 .button {
-  background-color: #fff;
+  background-color: #697070;
 }
 table td,
 table th {
@@ -664,6 +669,7 @@ table th {
 }
 .is-marginless {
   margin: 0 !important;
+  background-color: #69707a
 }
 .box {
   border-radius: 5px;
@@ -758,7 +764,7 @@ a.box:active {
 .button.is-active,
 .button:focus,
 .button:hover {
-  color: #222324;
+  color: #4792fa;
 }
 .button:active {
   box-shadow: inset 0 1px 2px rgba(17, 17, 17, 0.2);
@@ -1165,7 +1171,7 @@ a.box:active {
 .content h4,
 .content h5,
 .content h6 {
-  color: #b52323;
+  color: #5ea0be;
   font-weight: 300;
   margin-bottom: 20px;
 }
@@ -2084,7 +2090,7 @@ a.box:active {
   vertical-align: top;
 }
 .title {
-  color: #222324;
+  color: #69707a;
 }
 .title code {
   display: inline-block;
@@ -2246,6 +2252,9 @@ a.box:active {
   width: 24px;
   font-size: inherit;
   line-height: inherit;
+}
+span.icon:hover i svg path{
+  color: #ffbd3d;
 }
 .icon.is-small {
   font-size: 14px;
@@ -4265,7 +4274,7 @@ a.nav-item {
 .nav-item a:hover,
 a.nav-item.is-active,
 a.nav-item:hover {
-  color: #222324;
+  color: #467df5;
 }
 .nav-item a.is-tab,
 a.nav-item.is-tab {
@@ -5544,7 +5553,7 @@ a.panel-block:hover {
   }
 }
 .footer {
-  background-color: #f5f7fa;
+  background-color: #afccf8;
   padding: 40px 20px 80px;
 }
 code,
@@ -5612,7 +5621,7 @@ article + article {
   font-size: 24px;
 }
 .title a {
-  color: #222324;
+  color: #69707a;
 }
 .title.notfound {
   font-size: 20vw;
