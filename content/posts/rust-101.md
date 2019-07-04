@@ -2,6 +2,10 @@
 title: "Rust 101"
 date: 2019-06-30T17:17:37-07:00
 draft: false
+tags:
+  - rust
+  - languages
+  - intro
 ---
 
 # Rust: Echoing user input
