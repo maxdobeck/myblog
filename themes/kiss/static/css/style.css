@@ -5619,6 +5619,7 @@ article + article {
 }
 .title {
   font-size: 24px;
+  text-transform: lowercase;
 }
 .title a {
   color: #69707a;
