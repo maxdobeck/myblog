@@ -64,7 +64,7 @@ At this point in Python you could re-use `user_input` and say, `user_input = 100
 
 With Rust's Type System if you said, `user_input = 100` you'd get an error like, "user_input is not of type String" or "String cannot be an Integer".  The violation stems from the foundation of Rust; each variable must have a Type (string, integer, etc). This way the compiler can check to see if you're assigning an incorrect value to a variable.  And you can build functions around certain Types.
 
-With the default immutability of variables if you tried `user_input = "Hello world"` you'd encounter an error like, "`user_input was not declared as mut[mutable]`"(emphasis mine). This prevents you, another programmer, or another piece of the program from mistakenly referring to a variable as if it couldn't change.  Rust of course does let you define mutable variables that can be changed.
+With the default immutability of variables if you tried `user_input = "Hello world"` you'd encounter an error like, "`user_input was not declared as mut[mutable]`"(emphasis mine). This prevents you, another programmer, or another piece of the program from trying to change something that may be critical elsewhere in the program.  Rust of course does let you define mutable variables that can be changed.
  
 # Variables in Rust
 -------------------
@@ -80,7 +80,7 @@ let mut prompt = "Enter your text:".to_string();
 prompt = "What do you want to echo?".to_string();
 print!("{}", prompt);
 ```
-Here we infer the TYPE i.e. of a mutable variable. The compiler guesses that `prompt` should be a String and not something else like an Integer or Float.
+Here we infer the Type of a mutable variable. The compiler guesses that `prompt` should be a String and not something else like an Integer or Float.
 
 This part of the program will complile!  So we're legally overwriting the contents of `prompt`.  The compiler will generate a warning about prompt's value not being read though but we can ignore that for now.
 
@@ -91,6 +91,8 @@ let prompt: String;
 prompt = "Enter your text:".to_string();
 print!("{}", prompt);
 ```
+compiles &#x2705;
+
 In this case we annotated the variable `prompt` with the keyword String.  If we put `let prompt: i32;` this would prevent a string or set of characters from being used.  In fact the only value could be of type Integer, in our case a 32-bit integer.  Rust lets you get fairly granual with integers to be flexible.
 
 In this example we cannot change prompt.  For all time prompt will be contain "Enter your text:".  Unless we shadow it. Shadowing is when you re-use the name with the `let` keyword.  This will destroy the original variable prompt but that can be a good thing.
@@ -104,6 +106,7 @@ let prompt: String = "Enter your text: ".to_string();
 let prompt = 42;
 print!("{}", prompt);
 ```
+compiles &#x2705;
 
 As you can see it looks like we've violated the Type system but no we're just destroying the original prompt var, creating a new one, and thus annotating a new type to a new variable.  No mismatch between the variable Type and its contents!
 
