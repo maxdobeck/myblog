@@ -154,7 +154,7 @@ video {
   vertical-align: baseline;
   background: 0 0;
   background-color: #141617;
-  color: #69707a;
+  color: #919aa6;
 }
 td,
 td img {
@@ -305,7 +305,7 @@ pre {
   line-height: 1.25;
 }
 body {
-  color: #42464c;
+  color: #bacfee;
   font-size: 1rem;
   line-height: 1.428571428571429;
 }
@@ -843,17 +843,17 @@ a.box:active {
 }
 .button.is-light {
   background-color: #f5f7fa;
-  color: #42464c;
+  color: #bacfee;
 }
 .button.is-light.is-active,
 .button.is-light:focus,
 .button.is-light:hover {
   background-color: #d3dce9;
   border-color: transparent;
-  color: #42464c;
+  color: #bacfee;
 }
 .button.is-light.is-inverted {
-  background-color: #42464c;
+  background-color: #bacfee;
   color: #f5f7fa;
 }
 .button.is-light.is-inverted:hover {
@@ -871,14 +871,14 @@ a.box:active {
 .button.is-light.is-outlined:hover {
   background-color: #f5f7fa;
   border-color: #f5f7fa;
-  color: #42464c;
+  color: #bacfee;
 }
 .button.is-dark,
 .button.is-dark:active {
   border-color: transparent;
 }
 .button.is-dark {
-  background-color: #42464c;
+  background-color: #bacfee;
   color: #f5f7fa;
 }
 .button.is-dark.is-active,
@@ -890,7 +890,7 @@ a.box:active {
 }
 .button.is-dark.is-inverted {
   background-color: #f5f7fa;
-  color: #42464c;
+  color: #bacfee;
 }
 .button.is-dark.is-inverted:hover {
   background-color: #e4e9f2;
@@ -900,13 +900,13 @@ a.box:active {
 }
 .button.is-dark.is-outlined {
   background-color: transparent;
-  border-color: #42464c;
-  color: #42464c;
+  border-color: #bacfee;
+  color: #bacfee;
 }
 .button.is-dark.is-outlined:focus,
 .button.is-dark.is-outlined:hover {
-  background-color: #42464c;
-  border-color: #42464c;
+  background-color: #bacfee;
+  border-color: #bacfee;
   color: #f5f7fa;
 }
 .button.is-primary,
@@ -1093,7 +1093,7 @@ a.box:active {
 .button.is-link {
   background-color: transparent;
   border-color: transparent;
-  color: #42464c;
+  color: #bacfee;
   text-decoration: underline;
 }
 .button.is-link:focus,
@@ -1296,7 +1296,7 @@ a.box:active {
 }
 .input.is-dark,
 .is-dark.textarea {
-  border-color: #42464c;
+  border-color: #bacfee;
 }
 .input.is-info,
 .input.is-primary,
@@ -1453,7 +1453,7 @@ a.box:active {
   border-color: #f5f7fa;
 }
 .select select.is-dark {
-  border-color: #42464c;
+  border-color: #bacfee;
 }
 .select select.is-info,
 .select select.is-primary {
@@ -1551,7 +1551,7 @@ a.box:active {
   color: #f5f7fa;
 }
 .help.is-dark {
-  color: #42464c;
+  color: #bacfee;
 }
 .help.is-info,
 .help.is-primary {
@@ -1842,10 +1842,10 @@ a.box:active {
 }
 .notification.is-light {
   background-color: #f5f7fa;
-  color: #42464c;
+  color: #bacfee;
 }
 .notification.is-dark {
-  background-color: #42464c;
+  background-color: #bacfee;
   color: #f5f7fa;
 }
 .notification.is-info,
@@ -1878,10 +1878,10 @@ a.box:active {
   background-color: #d3d6db;
 }
 .progress::-webkit-progress-value {
-  background-color: #42464c;
+  background-color: #bacfee;
 }
 .progress::-moz-progress-bar {
-  background-color: #42464c;
+  background-color: #bacfee;
 }
 .progress.is-white::-webkit-progress-value {
   background-color: #fff;
@@ -1902,10 +1902,10 @@ a.box:active {
   background-color: #f5f7fa;
 }
 .progress.is-dark::-webkit-progress-value {
-  background-color: #42464c;
+  background-color: #bacfee;
 }
 .progress.is-dark::-moz-progress-bar {
-  background-color: #42464c;
+  background-color: #bacfee;
 }
 .progress.is-primary::-webkit-progress-value {
   background-color: #2077b2;
@@ -2090,7 +2090,7 @@ a.box:active {
   vertical-align: top;
 }
 .title {
-  color: #69707a;
+  color: #919aa6;
 }
 .title code {
   display: inline-block;
@@ -2284,7 +2284,7 @@ span.icon:hover i svg path{
 }
 .hamburger span,
 .nav-toggle span {
-  background-color: #42464c;
+  background-color: #bacfee;
   display: block;
   height: 1px;
   left: 50%;
@@ -2386,7 +2386,7 @@ span.icon:hover i svg path{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #42464c;
+  color: #bacfee;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2414,10 +2414,10 @@ span.icon:hover i svg path{
 }
 .tag.is-light {
   background-color: #f5f7fa;
-  color: #42464c;
+  color: #bacfee;
 }
 .tag.is-dark {
-  background-color: #42464c;
+  background-color: #bacfee;
   color: #f5f7fa;
 }
 .tag.is-info,
@@ -2548,7 +2548,7 @@ span.icon:hover i svg path{
 .card {
   background-color: #fff;
   box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1), 0 0 0 1px rgba(17, 17, 17, 0.1);
-  color: #42464c;
+  color: #bacfee;
   width: 300px;
 }
 .card .media:not(:last-child) {
@@ -3964,7 +3964,7 @@ span.icon:hover i svg path{
 }
 .menu-list a {
   border-radius: 2px;
-  color: #42464c;
+  color: #bacfee;
 }
 .menu-list a:hover {
   background-color: #f5f7fa;
@@ -3996,7 +3996,7 @@ span.icon:hover i svg path{
   color: inherit;
 }
 .message-header {
-  background-color: #42464c;
+  background-color: #bacfee;
   border-radius: 3px 3px 0 0;
   color: #fff;
   padding: 7px 10px;
@@ -4039,7 +4039,7 @@ span.icon:hover i svg path{
 }
 .message.is-light .message-header {
   background-color: #f5f7fa;
-  color: #42464c;
+  color: #bacfee;
 }
 .message.is-light .message-body {
   border-color: #f5f7fa;
@@ -4049,11 +4049,11 @@ span.icon:hover i svg path{
   background-color: #f4f5f6;
 }
 .message.is-dark .message-header {
-  background-color: #42464c;
+  background-color: #bacfee;
   color: #f5f7fa;
 }
 .message.is-dark .message-body {
-  border-color: #42464c;
+  border-color: #bacfee;
   color: gray;
 }
 .message.is-primary {
@@ -4268,7 +4268,7 @@ span.icon:hover i svg path{
 }
 .nav-item a,
 a.nav-item {
-  color: #42464c;
+  color: #bacfee;
 }
 .nav-item a.is-active,
 .nav-item a:hover,
@@ -4503,7 +4503,7 @@ a.panel-block:hover {
   font-size: 11px;
 }
 .panel-list a {
-  color: #42464c;
+  color: #bacfee;
 }
 .panel-list a:hover {
   color: #2077b2;
@@ -4554,7 +4554,7 @@ a.panel-block:hover {
 .tabs a {
   -ms-flex-align: center;
   align-items: center;
-  color: #42464c;
+  color: #bacfee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4946,10 +4946,10 @@ a.panel-block:hover {
 }
 .hero.is-light {
   background-color: #f5f7fa;
-  color: #42464c;
+  color: #bacfee;
 }
 .hero.is-light .title {
-  color: #42464c;
+  color: #bacfee;
 }
 .hero.is-light .title a,
 .hero.is-light .title strong {
@@ -4960,7 +4960,7 @@ a.panel-block:hover {
 }
 .hero.is-light .subtitle a,
 .hero.is-light .subtitle strong {
-  color: #42464c;
+  color: #bacfee;
 }
 .hero.is-light .nav {
   box-shadow: 0 1px 0 rgba(66, 70, 76, 0.2);
@@ -4975,10 +4975,10 @@ a.panel-block:hover {
 .hero.is-light .tabs.is-toggle a,
 .hero.is-light a.nav-item.is-active,
 .hero.is-light a.nav-item:hover {
-  color: #42464c;
+  color: #bacfee;
 }
 .hero.is-light .tabs a {
-  color: #42464c;
+  color: #bacfee;
   opacity: 0.5;
 }
 .hero.is-light .tabs a:hover,
@@ -4997,8 +4997,8 @@ a.panel-block:hover {
 .hero.is-light .tabs.is-boxed li.is-active a:hover,
 .hero.is-light .tabs.is-toggle li.is-active a,
 .hero.is-light .tabs.is-toggle li.is-active a:hover {
-  background-color: #42464c;
-  border-color: #42464c;
+  background-color: #bacfee;
+  border-color: #bacfee;
   color: #f5f7fa;
 }
 .hero.is-light.is-bold {
@@ -5012,21 +5012,21 @@ a.panel-block:hover {
 }
 @media screen and (max-width: 768px) {
   .hero.is-light .nav-toggle span {
-    background-color: #42464c;
+    background-color: #bacfee;
   }
   .hero.is-light .nav-toggle:hover {
     background-color: rgba(17, 17, 17, 0.1);
   }
   .hero.is-dark .nav-menu,
   .hero.is-light .nav-toggle.is-active span {
-    background-color: #42464c;
+    background-color: #bacfee;
   }
   .hero.is-light .nav-menu .nav-item {
     border-top-color: rgba(66, 70, 76, 0.2);
   }
 }
 .hero.is-dark {
-  background-color: #42464c;
+  background-color: #bacfee;
 }
 .hero.is-dark .title a,
 .hero.is-dark .title strong {
@@ -5077,7 +5077,7 @@ a.panel-block:hover {
 .hero.is-dark .tabs.is-toggle li.is-active a:hover {
   background-color: #f5f7fa;
   border-color: #f5f7fa;
-  color: #42464c;
+  color: #bacfee;
 }
 .hero.is-dark.is-bold {
   background-image: -webkit-linear-gradient(
@@ -5562,7 +5562,7 @@ html {
 }
 .footer a,
 .footer a:visited {
-  color: #42464c;
+  color: #bacfee;
 }
 .footer a:hover,
 .footer a:visited:hover {
@@ -5615,14 +5615,14 @@ article + article {
   margin-left: 10px;
 }
 .subtitle {
-  color: #69707a;
+  color: #919aa6;
 }
 .title {
   font-size: 24px;
   text-transform: lowercase;
 }
 .title a {
-  color: #69707a;
+  color: #919aa6;
 }
 .title.notfound {
   font-size: 20vw;
