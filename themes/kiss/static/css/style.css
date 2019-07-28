@@ -1176,8 +1176,7 @@ a.box:active {
   margin-bottom: 20px;
 }
 .content blockquote {
-  background-color: #f5f7fa;
-  border-left: 5px solid #d3d6db;
+  border-left: 5px solid #5b75fb;
   padding: 1.5em;
 }
 .content ol {
