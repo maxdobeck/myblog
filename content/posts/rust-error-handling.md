@@ -1,25 +1,34 @@
 ---
 title: "Rust Error Handling"
 date: 2019-07-14T21:26:34-07:00
-draft: true
+draft: false
 ---
 
 # Handling Errors in Rust
+
+### Result Enumerable
 To start you have to know about Rust's Enums (Enumerables).  Essentially you can think of errors as a return statement that could be one of two things: ERROR or OK.  This is called the `Result` enum (enumerable).  
 
 If a function succeeds you get OK.
 If a function fails you get ERROR and some details bubbled up from the error. [Rust By Example](https://doc.rust-lang.org/rust-by-example/std/result.html) is fairly dry but covers this well: 
 Actual documentation for reference: https://doc.rust-lang.org/std/result/enum.Result.html
 
-The goal with Result is to handle errors gracefully.  Unlike the "Try, Catch, Finally" pattern we're not going to say, "hey attempt this and if it blows up handle it this way, this way, or this way." Not that there's anything wrong with that &#128522;.
+The goal with Result is to handle errors gracefully.  Unlike the "Try, Catch, Finally" pattern we're not going to say, "hey attempt this and if it blows up handle it this way, this way, or this way."
 
-### non-rust pseudo code example
+There's no way I'm going to explain this better than the Official Rust Programming Language book by Steve Klabnik & Carol Nichols. I'm just gonna link to Chapter 9: Error Handling where they have a classic example about opening a file.  https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html
+
+### Option
+There's another type that is commonly used in Error handling, usually when you're validating for the presensce of a return value.  `Option` returns Something or Nothing, literally!  Take a look https://doc.rust-lang.org/std/option/.
+
+So if your function or workflow doesn't invole using the `Result` type we'll use `Option`. In the below example we need to make sure the user provides some argument.  We'll be relying on the `Option` type which returns a generic object, a string in our case.  Its easy to think of `Some` as an actual value in memory and `None` as basically `void` in C/C++ or `None` in Python.
+
+### non-rust pseudo code example with Exceptions
 
 ```
 user_input = get_STDIN()
 
-try () {
-	do something with user_input on the happy_path()
+try:
+    print(user_input)
 except as IO_err:
     do something because of this specfic problem
 except as no_input_err:
@@ -50,7 +59,24 @@ fn main() {
 ```
 compiles &#x2705;
 
-Some and None for the non-rustacean -> https://stackoverflow.com/questions/24771655/some-and-none-what-are-they
+### src/rust-example - the short version
+```
+    let path = std::env::args().nth(1).expect("No args found");
+    println!("{}", path);
+```
+compiles &#x2705;
+
+Here we're doing the same exact thing, albeit with a `panic!` macro so it looks a little scarier when we exit.  But here's the boiler plate for `.expect()`:
+
+>Unwraps an option, yielding the content of a Some.
+>Panics if the value is a None with a custom panic message provided by msg.
+
+
+
+
+
+### Some and None for the non-rustacean
+https://stackoverflow.com/questions/24771655/some-and-none-what-are-they
 
 Important part quoted here because links die:
 
