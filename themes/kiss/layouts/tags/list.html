@@ -2,6 +2,7 @@
 {{ partial "nav" . }}
 <section class="section">
   <div class="container">
+    <h2 class="matching-tags">{{ .URL }}</h2>
     {{ range sort .Pages }}
     <ul>
       <div>
