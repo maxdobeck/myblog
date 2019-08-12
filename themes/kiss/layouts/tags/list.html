@@ -3,7 +3,7 @@
 <section class="section">
   <div class="container">
     {{ $count := len .Pages }}
-    <h2 class="matching-tags">{{ $count }} {{ .URL }}</h2>
+    <h2 class="matching-tags">{{ $count }} {{ .RelPermalink }}</h2>
     {{ range sort .Pages }}
     <ul>
       <div>
