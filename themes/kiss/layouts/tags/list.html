@@ -6,7 +6,7 @@
     <ul>
       <div>
         {{ if .Params.tags }}
-        {{ partial "tags" .Params.tags }}
+          {{ partial "tags" .Params.tags }}
         {{ end }}
       </div>
       <h1><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>

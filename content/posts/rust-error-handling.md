@@ -2,6 +2,8 @@
 title: "Rust Error Handling"
 date: 2019-07-14T21:26:34-07:00
 draft: false
+tags:
+  - rust
 ---
 
 # Handling Errors in Rust

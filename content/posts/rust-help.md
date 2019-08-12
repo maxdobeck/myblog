@@ -1,6 +1,8 @@
 ---
 title: "Rust Help"
 date: 2019-08-01T22:31:17-07:00
+tags:
+  - rust
 ---
 
 # Rust Help
