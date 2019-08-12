@@ -2,7 +2,8 @@
 {{ partial "nav" . }}
 <section class="section">
   <div class="container">
-    <h2 class="matching-tags">{{ .URL }}</h2>
+    {{ $count := len .Pages }}
+    <h2 class="matching-tags">{{ $count }} {{ .URL }}</h2>
     {{ range sort .Pages }}
     <ul>
       <div>
