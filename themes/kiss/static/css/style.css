@@ -5543,6 +5543,9 @@ a.panel-block:hover {
   background-color: #141617;
   padding: 40px 20px;
 }
+.section .container #site-header {
+  font-size: 2.8rem;
+}
 @media screen and (min-width: 980px) {
   .section.is-medium {
     padding: 120px 20px;
