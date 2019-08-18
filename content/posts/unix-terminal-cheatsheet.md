@@ -71,6 +71,16 @@ alt + c :: capitalize the character under the cursor
 ### Piping
 `$ cat somefile.txt | wc -l` :: sends output of 'cat' into 'wc', thus counting the lines in 'somefile.txt'.  For comparison run `$ cat somefile.txt` and then run `$ cat somefile.txt | wc -l`.  Or if there's a specific word in your text file try `$ cat somefile.txt | grep someword`.
 
+### Environment Variables
+https://en.m.wikipedia.org/wiki/Environment_variable
+Wikipedia says it best. Basically it’s a string that’s stored on the system running the program. Whatever local computer you are on will have different environment variables. Most Linux systems use the Bash shell and Bash reads the variables from .bashrc or .bash_profile usually. 
+
+Each user on the system has separate environment variables. This is why it’s important to be clear about how these variables are created. Typically you’ll find that you use some sort of external system to manage environment variables as you move programs through testing, deployment, and multiple systems.
+
+Create environment variable `export MYVAR='some-value'`  
+Check the value of an env. variable `echo $MYVAR` 
+Add environment variable permanently to ~/.bashrc.  `echo export MYVAR='some-string' >> ~/.bashrc`
+
 ### Sources and further reading
 * cat man page https://linux.die.net/man/1/cat
 
