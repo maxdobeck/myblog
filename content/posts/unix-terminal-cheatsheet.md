@@ -3,7 +3,7 @@ title: "Unix Terminal Cheatsheet"
 date: 2019-08-11T22:52:00-07:00
 draft: false
 tags:
-  - unix
+  - linux
   - cheatsheet
   - bash
   - cli
@@ -65,10 +65,15 @@ alt + c :: capitalize the character under the cursor
 
 `cd -` :: swap to last directory moved to with `cd` command.  If you `cd ~/java-programs` then `cd ~/scripts` you can use `cd -` to swap between the two directores ~/java-programs and ~/scripts.
 
+### cat (concatenate)
+`cat some-file.txt` :: prints the file "some-file.txt" to STDOUT out, so to your terminal in most cases.  Will output nonsense binary and symbols if the terminal doesn't have a way to represent the output.  Typically used to quickly scan the file contents without leaving the terminal or to pipe the `cat` output to another tool.
+
 ### Piping
 `$ cat somefile.txt | wc -l` :: sends output of 'cat' into 'wc', thus counting the lines in 'somefile.txt'.  For comparison run `$ cat somefile.txt` and then run `$ cat somefile.txt | wc -l`.  Or if there's a specific word in your text file try `$ cat somefile.txt | grep someword`.
 
 ### Sources and further reading
+* cat man page https://linux.die.net/man/1/cat
+
 * http://teohm.com/blog/shortcuts-to-move-faster-in-bash-command-line/
 * https://stackoverflow.com/questions/9679776/how-do-i-clear-delete-the-current-line-in-terminal
 * https://www.cyberciti.biz/ (nixCraft blog mentioned above)

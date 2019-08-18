@@ -2,7 +2,7 @@ baseurl = "https://mdobeck.com/"
 languageCode = "en"
 title = "mdobeck.com"
 theme = "kiss"
-googleAnalytics = "UA-123402073-1"
+googleAnalytics = "UA-123402073-2"
 # Number of posts per page
 Paginate = 5
 enableRobotsTXT = true
@@ -28,7 +28,7 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 
 twitter = "amish_panda"
 github = "maxdobeck"
-email = "max.dobeck@protonmail.com"
+email = ""
 linkedin = "maxdobeck"
 
 [params.social.config]
