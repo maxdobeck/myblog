@@ -78,8 +78,9 @@ Wikipedia says it best. Basically it’s a string that’s stored on the system 
 Each user on the system has separate environment variables. This is why it’s important to be clear about how these variables are created. Typically you’ll find that you use some sort of external system to manage environment variables as you move programs through testing, deployment, and multiple systems.
 
 Create environment variable `export MYVAR='some-value'`  
-Check the value of an env. variable `echo $MYVAR` 
+Check the value of an env. variable `echo $MYVAR`
 Add environment variable permanently to ~/.bashrc.  `echo export MYVAR='some-string' >> ~/.bashrc`
+Force the shell to re-read a certain file and pick up any new environment variables `source ~/.bashrc`.  Do this if you see an empty line when echo-ing a variable.
 
 ### Sources and further reading
 * cat man page https://linux.die.net/man/1/cat
