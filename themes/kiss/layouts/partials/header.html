@@ -7,6 +7,8 @@
 <title>{{ .Title }} | {{ .Site.Title }}</title>
 {{ else }}
 <title>{{ .Site.Params.Info.homeTitle }}</title>
+<meta name="description" content="{{ .Site.Params.Info.description }}">
+<meta name="og:description" content="{{ .Site.Params.Info.description }}">
 {{ end }}
 {{ if .Site.Params.Info.enableSocial }}
 {{- partial "social/opengraph" . -}}

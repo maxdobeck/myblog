@@ -18,6 +18,7 @@ authorEmail = "max.dobeck@protonmail.com"
 [params.info]
 enableSocial = false # Adds OpenGraph and Twitter cards
 homeTitle = "mdobeck.com" # Title for home page
+description = "Guides, samples, and findings by Max Dobeck"
 poweredby = true # Adds powered by Hugo and Kiss below Copyright section
 related = false # Includes related articles
 
