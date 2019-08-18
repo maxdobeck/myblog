@@ -71,6 +71,18 @@ alt + c :: capitalize the character under the cursor
 ### Piping
 `$ cat somefile.txt | wc -l` :: sends output of 'cat' into 'wc', thus counting the lines in 'somefile.txt'.  For comparison run `$ cat somefile.txt` and then run `$ cat somefile.txt | wc -l`.  Or if there's a specific word in your text file try `$ cat somefile.txt | grep someword`.
 
+### Redirection
+`>>` and `>` redirect output.  Unlike pipes you won't simply pass the output to another program, the Bash shell will literally write the content on the left of the `>>`/`>` to the right argument.  
+
+`>>` Create a file if it does not exist, append if file exists.
+
+As an example, `cat some-file.txt >> new-file.txt`.  `new-file.txt` will be created if it does not exist.  If there is a new-file then the output will be appended.
+
+`>` Create a file if it does not exist.  Overwrite contents if file exists.
+
+`cat some-file.txt > new-file.txt` while using the singular '>' `new-file.txt` will be created if it does not exist.  *All contents will be overwritten if it does exist!*  Be careful!
+
+
 ### Environment Variables
 https://en.m.wikipedia.org/wiki/Environment_variable
 Wikipedia says it best. Basically it’s a string that’s stored on the system running the program. Whatever local computer you are on will have different environment variables. Most Linux systems use the Bash shell and Bash reads the variables from .bashrc or .bash_profile usually. 
@@ -84,6 +96,8 @@ Force the shell to re-read a certain file and pick up any new environment variab
 
 ### Sources and further reading
 * cat man page https://linux.die.net/man/1/cat
+
+* redirection ">>" or ">" https://www.gnu.org/software/bash/manual/html_node/Redirections.html 
 
 * http://teohm.com/blog/shortcuts-to-move-faster-in-bash-command-line/
 * https://stackoverflow.com/questions/9679776/how-do-i-clear-delete-the-current-line-in-terminal
