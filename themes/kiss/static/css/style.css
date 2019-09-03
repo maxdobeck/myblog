@@ -308,7 +308,6 @@ pre {
 body {
   color: #bacfee;
   font-size: 1rem;
-  line-height: 1.428571428571429;
 }
 code {
   padding: 1px 2px 2px;
@@ -1156,9 +1155,6 @@ a.box:active {
   margin-left: 2em;
   margin-right: 2em;
   margin-top: 1em;
-}
-.content p {
-	text-align: justify;
 }
 .content blockquote:not(:last-child),
 .content ol:not(:last-child),
@@ -5595,7 +5591,6 @@ article + article {
 }
 .content {
   font-size: 16px;
-  line-height: 1.75;
 }
 .media-content .subtitle + .title {
   margin-bottom: 10px;
@@ -5682,7 +5677,7 @@ code {
 .content pre:not(:last-child),
 .content table:not(:last-child),
 .content ul:not(:last-child) {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.1em;
 }
 .content table td,
 .content table th {
@@ -5693,10 +5688,9 @@ code {
 .content p > code,
 .content > code {
   font-size: 90%;
-  padding: 2px 4px;
-  margin: 0 2px;
-  border: 1px solid #3e3e3e;
-  border-radius: 4px;
+  padding: 1px 1px;
+  margin: 0 1px;
+  border-radius: 6px;
   background-color: #030303;
   color: #36d816;
 }
