@@ -5,14 +5,11 @@ draft: false
 ---
 
 ## aka Critical Thinking
-What happens in between someone handing you a problem and you fixing the problem?  For many people this is a black hole.  If an aging parent (or these days naive teenagers) ask you to fix the wifi all they know is that you do some sort of magic that gets the wifi back up.  There is some barrier there preventing them from picking out the exact steps you take, yet one thing is true:
-there is a problem -> you do something -> the problem goes away
+What happens in between someone handing you a problem and you fixing the problem?  For many people this is a sink for their time and simulaneously a source of frustration. We've all encountered a situation where only "we" can fix it and the requester lacks the ability to rectify the situation. They may ask you to fix the wifi, or turn on the TV, or bake a special meal. All they know is that you do some sort of magic that gets the results they want.  There is some barrier there preventing them from picking out the exact steps you take, yet one thing is true:
 
-You can't fault people for abstracting your steps and effort away but can you honestly give precise steps on *how* you did what you did?
+`there is a problem` -> `you do something` -> `the problem goes away`
 
-## Abstract
-I believe 3 things happen during any succesful troubleshooting session.
-
+## Abstracting Troubleshooting
 1. Define the problem
 2. Gather supporting details
 3. Resolve the issue
@@ -21,31 +18,27 @@ I believe 3 things happen during any succesful troubleshooting session.
 "Something" encapsulates many steps, not just in bring about a resolution, but diagnosing the problem.  [Like a car mechanic or doctor](https://www.npr.org/sections/health-shots/2019/02/27/697788394/does-your-knee-make-more-of-a-click-or-a-clack-teaching-car-talk-to-new-docs) these steps are probably going to be investigative.  They will be short inquiries to ascertain an overall state of whatever it is you're troubleshooting.  Continuing with an incorrect mental model is not only counter-productive but could make the issue worse.
 
 ## State
-What does the problem look like?  Like the blind men and the elephant you can't proceed till you can agree on symptoms.  What is the *expected* vs *actual* outcome?  Sometimes that's easy!  Sometimes it should do a thing, but it doesn't!  Other times its hard because its subtle.  If you're not intimately familiar with the expected outcome you may miss a tiny error that is glaringly obvious to others.
+What does the problem look like?  Like the blind men and the elephant you can't proceed till you can agree on symptoms.  What is the Expected vs Actual outcome?  Sometimes that's easy!  Sometimes it should do a thing, but it doesn't!  Other times its hard because its subtle and involves branching workflows.  If you're not intimately familiar with the expected outcome you may miss a tiny error that is glaringly obvious to others.
 
 **When in doubt observe and assert.**
 
 ## Inquiry
-Once you have a clear definition of the problem you probably need to know how long its been like this.  Having something "broken" since you started using it may mean its not actually broken, you just had different expectations.  If that's the case we can quickly move your expectations back in line with reality.  All it takes is a little investigation.
-
-                                  | expectations <----
-                                  |
-                                  |
-                                  |
-               meet ->            | reality
+Once you have a clear definition of the problem you probably need to know how long its been like this.  Having something "broken" since you started using it may mean its not actually broken, but that the functionality has changed.  If that's the case we can quickly move your expectations back in line with reality.  All it takes is a little investigation.
 
 But that's not something you can easily explain how to do.  Its more of a general strategy that doesn't work as a strict set of commands:
-```
-if <long-duration> broken ---> check if its actually broken
-else if <short-duration> broken ---> then what?
-```
 
-So how do you approach it?  Well you need to find a subject matter expert (or something close) and bring them a  set of useful items.  The same set of items if you had a weird rash and went to the doctor:
+If something has been known as broken for a long-duration, re-do the workflow.  Verify it is broken and the user(s) are not confused.
+
+If something broke recently, clearly summarize the behavior in 3 sentences or less.
+
+## What Next?
+In either case you will need to find a subject matter expert (or something close) and bring them a  set of useful items.  The same set of items if you had a weird rash and went to the doctor:
 
 - How long have you had it?
 - Did you do anything that might have triggered it?
 - What medicines have you tried taking?
 - Is it consistently rashy or does it go away in certain envionments?
+- The summary of 3 sentences or less mentioned above
 
 If we abstract this away from a scary rash situation you can see the same questionns can be applied to many things.  Car trouble, plumbing problems, software problems, etc.
 
@@ -57,7 +50,7 @@ If we abstract this away from a scary rash situation you can see the same questi
 
 All of these questions boil down to 1 thing.  Investigation!  At this point you may not have actually fixed anything or even made any suggestions but by the time you have all the questions answered you may feel like you already have an answer!
 
-## Troubleshooting
+## Testing
 Now you have something to work with.  You can take steps to narrow down the above questions or maybe answer lingering questions.  The important thing is to trust your gut.  If you have a feeling something is not being investigated closely then look closer!  
 
 If you find something that proves or asserts a certain characteristic of the problem people need to know.  Even if you're the only one investigating you should document your findings.  You can't take the chance that you'll have that gut feeling again but forgot you went down this line of inquiry.
