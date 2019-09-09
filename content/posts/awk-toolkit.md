@@ -20,6 +20,9 @@ https://www.cyberciti.biz/faq/how-to-print-filename-with-awk-on-linux-unix/
 and here:
 https://likegeeks.com/awk-command/
 
+# Important Info on the $2
+$1 is the first column of data.  $0 is the whole row (all columns).  $2 is the second.  $3 is the second and so on.
+
 # Samples
 Here are a few examples, some contrived, some real world where I've seen or used Awk.
 #### Print PID of all grepped processes
