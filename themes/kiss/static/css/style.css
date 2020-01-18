@@ -4343,6 +4343,7 @@ a.nav-item.is-tab.is-active {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  font-size: 100%;
 }
 .nav,
 .nav-center {
