@@ -149,7 +149,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 114%;
   font-weight: 400;
   vertical-align: baseline;
   background: 0 0;
@@ -163,7 +163,7 @@ td img {
 pre,
 pre code {
   background-color: #030303;
-  color: #36d816;
+  color: #fdfffdc7;
 }
 *,
 :after,
