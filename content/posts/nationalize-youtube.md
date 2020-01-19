@@ -17,7 +17,7 @@ Most of history is all about the elite.  The upper class. The pharoahs, kings, q
 
 This continues on through most of human history.  When we learn about the Medieval Times in our Euro-centric classes its all about how the land was owned by the nearest rich douche.  And the wealthiest douche ruled the largest piece of land because a lady in a lake gave him a sword.  Did the locals think this was a poor system?  I dunno because I couldn't subscribe to their vlog.
 
-You can pick a culture and a point on the timeline for our species, you'd probably find something to get curious about.  My point is simple: we've finally got a record of what's going on the world.  A fairly accurate one!  Imagine if the history after 2001 September, 11th was only recorded as it related to Presidents and world leaders.  All record of public opinion discarded.  No record of the backlash of invading soveriegn nations followed by the subsequent indifference of the world.
+My point is simple: we've finally got a record of what's going on the world.  A fairly accurate one!  Imagine if the history after 2001 September, 11th was only recorded as it related to Presidents and world leaders.  All record of public opinion discarded.  No record of the backlash of invading soveriegn nations followed by the subsequent indifference of the world.
 
 The world would look fairly grim without the rythm of daily life. People care of course, about the world stage, but day-to-day life dominates.  Christmas parties, suprise gifts, funny things their dog did.  I doubt our ancestors were any different.  Survining as well as they could while surrouned by bullshit.
 
