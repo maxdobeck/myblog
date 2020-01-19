@@ -149,7 +149,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 114%;
   font-weight: 400;
   vertical-align: baseline;
   background: 0 0;
@@ -253,9 +252,6 @@ sub {
 code,
 kbd,
 pre,
-samp {
-  font-family: monospace, sans-serif;
-}
 button,
 input[type="button"] {
   width: auto;
@@ -295,15 +291,10 @@ body,
 button,
 input,
 select,
-textarea {
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro",
-    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
-}
 code,
 pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
-  font-family: "Source Code Pro", Monaco, Inconsolata, monospace;
   line-height: 1.25;
 }
 body {
@@ -1157,6 +1148,9 @@ a.box:active {
   margin-right: 2em;
   margin-top: 1em;
 }
+.content p {
+  font-size: 104%;
+  },
 .content blockquote:not(:last-child),
 .content ol:not(:last-child),
 .content p:not(:last-child),
@@ -5579,7 +5573,6 @@ html {
   border-bottom-color: #2077b2;
 }
 .container {
-  max-width: 800px;
   margin: 0 auto;
 }
 .content h1:not(:first-child),
