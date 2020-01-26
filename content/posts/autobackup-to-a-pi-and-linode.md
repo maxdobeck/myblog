@@ -22,6 +22,7 @@ This led me to [Linode's Object Storage](https://www.linode.com/products/object-
 
 ### Generating an API Token
 The `API Token`, not to be confused with the `Key Pair` mentioned elsewhere, is used by the Linode-CLI to interact with your resources.  Depending on the scope of access you give to your token, the token can modify everything on your account or be restricted to a small subset of Linode resources.  In our case we'll be setting up a token that can only modify:
+
 - Account data
 - Object Storage data
 
