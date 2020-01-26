@@ -153,7 +153,7 @@ video {
   vertical-align: baseline;
   background: 0 0;
   background-color: #141617;
-  color: #919aa6;
+  color: #fbfbfb;
 }
 td,
 td img {
@@ -2081,7 +2081,7 @@ a.box:active {
   vertical-align: top;
 }
 .title {
-  color: #919aa6;
+  color: #fbfbfb;
 }
 .title code {
   display: inline-block;
