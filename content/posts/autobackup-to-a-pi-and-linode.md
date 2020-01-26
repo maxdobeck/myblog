@@ -1,7 +1,10 @@
 ---
 title: "Backup to a Raspberry Pi and Linode"
 date: 2020-01-25T20:45:17-08:00
-draft: true
+tags:
+    - linode
+    - bash
+draft: false
 ---
 <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
