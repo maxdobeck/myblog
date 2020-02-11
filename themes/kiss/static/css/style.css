@@ -153,7 +153,7 @@ video {
   vertical-align: baseline;
   background: 0 0;
   background-color: #141617;
-  color: #fbfbfb;
+  color: #ebebee;
 }
 td,
 td img {
@@ -1134,7 +1134,7 @@ a.box:active {
   border-bottom: 1px solid #d3d6db;
 }
 .content a:not(.button):visited {
-  color: #847bb9;
+  color: #a3d4ff;
 }
 .content a:not(.button):hover {
   border-bottom-color: #2077b2;
@@ -1147,9 +1147,10 @@ a.box:active {
   margin-left: 2em;
   margin-right: 2em;
   margin-top: 1em;
+  font-size: 110%;
 }
 .content p {
-  font-size: 104%;
+  font-size: 120%;
   },
 .content blockquote:not(:last-child),
 .content ol:not(:last-child),
@@ -5574,6 +5575,7 @@ html {
 }
 .container {
   margin: 0 auto;
+  width: 1000px;
 }
 .content h1:not(:first-child),
 .content h2:not(:first-child),
