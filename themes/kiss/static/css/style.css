@@ -366,6 +366,7 @@ table th {
   .container {
     margin: 0 auto;
     max-width: 960px;
+    width: 1000px;
   }
   .container.is-fluid {
     margin: 0 20px;
@@ -373,6 +374,12 @@ table th {
   }
   .is-block-desktop {
     display: block !important;
+  }
+  .content ul {
+  font-size: 110%;
+}
+.content p {
+  font-size: 120%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1147,10 +1154,10 @@ a.box:active {
   margin-left: 2em;
   margin-right: 2em;
   margin-top: 1em;
-  font-size: 110%;
+  /*font-size: 110%;*/
 }
 .content p {
-  font-size: 120%;
+  /*font-size: 120%;*/
   },
 .content blockquote:not(:last-child),
 .content ol:not(:last-child),
@@ -5575,7 +5582,6 @@ html {
 }
 .container {
   margin: 0 auto;
-  width: 1000px;
 }
 .content h1:not(:first-child),
 .content h2:not(:first-child),
