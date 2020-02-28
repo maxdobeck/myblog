@@ -103,12 +103,6 @@ fieldset,
 figure,
 footer,
 form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 header,
 html,
 i,
@@ -191,8 +185,7 @@ q:before {
 }
 a {
   font-size: 100%;
-  background: 0 0;
-  color: #2077b2;
+  background-color: transparent;
   text-decoration: none;
   -webkit-transition: none 86ms ease-out;
   word-wrap: break-word;
@@ -2088,9 +2081,6 @@ a.box:active {
 .subtitle code {
   display: inline-block;
   vertical-align: top;
-}
-.title {
-  color: #fbfbfb;
 }
 .title code {
   display: inline-block;
@@ -5546,7 +5536,7 @@ a.panel-block:hover {
   padding: 40px 20px;
 }
 .section .container #site-header {
-  color: rgb(91, 197, 88);
+  color: #5bc558;
   font-size: 2.8rem;
 }
 @media screen and (min-width: 980px) {
@@ -5729,7 +5719,24 @@ img[src$="#r"] {
 .related ul {
   font-size: 17px;
 }
-
-div.subtitle.tags{
+div.subtitle.tags {
   margin-bottom: 0px;
+}
+.title-highlight {
+  background-color: #a728dd63;
+  height: 20px;
+  position: relative;
+  top: -30px;
+  left: -20px;
+}
+.title-header .title {
+  position: relative;
+  z-index: 999999;
+}
+.title-header {
+  height: 80px;
+}
+article .title-header h1.title a {
+  color: #141617;
+  background-color: #f8d823;
 }
