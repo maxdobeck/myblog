@@ -11,7 +11,7 @@
           {{ partial "tags" .Params.tags }}
         {{ end }}
       </div>
-      <h1><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
+      <h1><a class="button is-link" href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
     </ul>
     {{ end }}
   </div>
