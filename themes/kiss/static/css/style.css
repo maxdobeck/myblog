@@ -332,9 +332,8 @@ pre code {
   overflow-x: auto;
   padding: 16px 20px;
 }
-.box,
-.button {
-  background-color: #697070;
+.box {
+  background-color: #d3d6db;
 }
 table td,
 table th {
@@ -660,10 +659,6 @@ table th {
 .is-disabled {
   pointer-events: none;
 }
-.is-marginless {
-  margin: 0 !important;
-  background-color: #69707a
-}
 .box {
   border-radius: 5px;
   box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1), 0 0 0 1px rgba(17, 17, 17, 0.1);
@@ -681,13 +676,11 @@ a.box:active {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #d3d6db;
-  border-radius: 3px;
   color: #222324;
+  background-color: #a0b1ca;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
   height: 32px;
   line-height: 24px;
   position: relative;
@@ -700,6 +693,7 @@ a.box:active {
 }
 .button:hover {
   border-color: #aeb1b5;
+  background-color: #bacfee;
 }
 .button.is-active,
 .button:active,
@@ -5723,7 +5717,7 @@ div.subtitle.tags {
   margin-bottom: 0px;
 }
 .title-highlight {
-  background-color: #a728dd63;
+  background-color: #8a6df388;
   height: 20px;
   position: relative;
   top: -30px;
@@ -5736,7 +5730,8 @@ div.subtitle.tags {
 .title-header {
   height: 80px;
 }
+/* yellow title baby. fast like a cheetah */
 article .title-header h1.title a {
   color: #141617;
-  background-color: #f8d823;
+  background-color: #f7da35ec; 
 }
