@@ -17,7 +17,6 @@ This led me to [Linode's Object Storage](https://www.linode.com/products/object-
 - Linode Account
 - The basics of Object Storage: https://www.linode.com/docs/platform/object-storage/how-to-use-object-storage/
 - Basic Bash skills
-- Copy-paste some Pip Install commands
 
 
 ### Generating an API Token
