@@ -1119,11 +1119,14 @@ a.box:active {
   top: 50%;
   position: absolute !important;
 }
+.content a {
+  color: #a3d4ff;
+}
 .content a:not(.button) {
   border-bottom: 1px solid #d3d6db;
 }
 .content a:not(.button):visited {
-  color: #a3d4ff;
+  color: #4ea7f5;
 }
 .content a:not(.button):hover {
   border-bottom-color: #2077b2;
