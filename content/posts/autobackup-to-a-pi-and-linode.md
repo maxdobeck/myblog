@@ -4,6 +4,8 @@ date: 2020-01-25T20:45:17-08:00
 tags:
     - linode
     - bash
+    - pi
+    - backup
 draft: false
 ---
 <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
@@ -17,6 +19,7 @@ This led me to [Linode's Object Storage](https://www.linode.com/products/object-
 - Linode Account
 - The basics of Object Storage: https://www.linode.com/docs/platform/object-storage/how-to-use-object-storage/
 - Basic Bash skills
+- Raspberry pi + external hdd
 
 
 ### Generating an API Token
@@ -76,4 +79,31 @@ This is a 'dumb' backup solution but it does the job when I need it:
 https://github.com/maxdobeck/scripts/blob/master/backup.sh
 
 The final portion of the script will be the Linode Upload.  `$REMOTE_BACKUP` is the name of my bucket and you can see I'm simply calling the linode-cli tool.
+
+### Raspberry Pi Local Backup
+If you have a pi you can plug in a USB external hard drive.  There may be some power issues but so far so good!  I doubt this is perfect but basically you make sure you can see the drive with:
+
+```
+lsblk
+```
+
+or 
+
+```
+df -TH
+```
+
+You should be able to locate the external hard drive based on the name, size, or some other unique factor.  The pi doesn't have much space by default.
+
+Then mount it to the pi with:
+
+```
+sudo mount -o rw,uid=1001 /dev/sda1 /home/you/media/
+```
+
+`-o`: comma-separated list of mount options (used to pass in all the flags/args in the command above).
+`rw`: redundant as `-o rw` is the default.
+`uid=1001`: my user's id.  Run `id` to see more info on your system.
+`/dev/sda1`: the disk in question we want to mount.  May differ on your system, again you must find that with lsblk or df.
+`/home/you/media/`: the path you want the drive to live at.
 
