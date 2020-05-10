@@ -102,8 +102,12 @@ sudo mount -o rw,uid=1001 /dev/sda1 /home/you/media/
 ```
 
 `-o`: comma-separated list of mount options (used to pass in all the flags/args in the command above).
+
 `rw`: redundant as `-o rw` is the default.
+
 `uid=1001`: my user's id.  Run `id` to see more info on your system.
+
 `/dev/sda1`: the disk in question we want to mount.  May differ on your system, again you must find that with lsblk or df.
+
 `/home/you/media/`: the path you want the drive to live at.
 
