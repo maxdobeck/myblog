@@ -31,6 +31,9 @@ input[type="checkbox"],
 input[type="radio"] {
   vertical-align: baseline;
 }
+a {
+  color: #63b0fd;
+}
 a:hover,
 strong,
 table th {
@@ -146,7 +149,7 @@ video {
   font-weight: 400;
   vertical-align: baseline;
   background: 0 0;
-  background-color: #141617;
+  background-color: #181f22;
   color: #ebebee;
 }
 td,
@@ -155,8 +158,8 @@ td img {
 }
 pre,
 pre code {
-  background-color: #030303;
-  color: #fdfffdc7;
+  color: #fdfffd;
+  background-color: #283236;
 }
 *,
 :after,
@@ -5523,7 +5526,7 @@ a.panel-block:hover {
   flex-grow: 1;
 }
 .section {
-  background-color: #141617;
+  background-color: #181f22;
   padding: 40px 20px;
 }
 .section .container #site-header {
@@ -5677,8 +5680,8 @@ code {
   padding: 1px 1px;
   margin: 0 1px;
   border-radius: 6px;
-  background-color: #030303;
-  color: #ff6f36;
+  background-color: #181f22;
+  color: #e5f783;
 }
 .content pre code {
   font-size: 90%;
@@ -5729,6 +5732,6 @@ div.subtitle.tags {
 }
 /* yellow title baby. fast like a cheetah */
 article .title-header h1.title a {
-  color: #141617;
+  color: #181f22;
   background-color: #f7da35ec; 
 }
